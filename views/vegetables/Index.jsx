@@ -4,6 +4,9 @@ function Index({ vegetables }) {
     return (
         <div>
             <h1>Vegetables Index Page</h1>
+            <nav>
+                <a href="/vegetables/new">Create a New Vegetable</a>
+            </nav>
             <ul>
                 {vegetables.map((vegetable, i) => {
                     return (

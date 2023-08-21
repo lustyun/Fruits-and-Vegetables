@@ -1,13 +1,16 @@
 import React from "react";
 
-function Index({fruits}) {
+function Index({ fruits }) {
     return (
         <div>
             <h1>Fruits Index Page</h1>
+            <nav>
+                <a href="/fruits/new">Create a New Fruit</a>
+            </nav>
             <ul>
                 {fruits.map((fruit, i) => {
                     return (
-                        <li key= {i}>
+                        <li key={i}>
                             The <a href={`/fruits/${i}`}>{fruit.name}</a> is{" "}
                             {fruit.color} <br></br>
                             {fruit.readyToEat
