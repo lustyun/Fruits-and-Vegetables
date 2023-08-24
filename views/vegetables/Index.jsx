@@ -8,10 +8,10 @@ function Index({ vegetables }) {
                 <a href="/vegetables/new">Create a New Vegetable</a>
             </nav>
             <ul>
-                {vegetables.map((vegetable, i) => {
+                {vegetables && vegetables.map((vegetable, i) => {
                     return (
                         <li key={i}>
-                            <a href={`/vegetables/${i}`}>{vegetable.name}</a> is
+                            <a href={`/vegetables/${vegetable._id}`}>{vegetable.name}</a> is
                             called {vegetable.scientific_name} <br></br>
                             <br />
                         </li>
